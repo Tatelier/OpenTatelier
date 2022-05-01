@@ -1,0 +1,106 @@
+/**
+ * メイン設定ファイルです。
+ * 主に起動時のデフォルト設定をまとめています。
+ * 一部設定は起動後のコマンド入力によって切り替えることも可能です。
+ *
+ */
+{
+	// テーマフォルダ
+	Theme: {
+		FolderPath: "Resources/Theme/v1",
+	},
+	
+	// 譜面フォルダ
+	Score: {
+		FolderPath: "Resources/Score"
+	},
+	
+	// デフォルトのフォントを指定
+	Font: {
+		DefaultFont: "UD デジタル 教科書体 NK-B"
+	},
+
+	// XAudioを使うかどうか
+	UseXAudio: true,
+
+	// プレイヤー最大人数
+	// 
+	PlayerMaxNum: 15,
+
+	// プレイヤー情報ファイルを指定
+	Players: [
+		"Resouces/Player/Default.hjson" // player1
+	],
+
+	// プレイヤー毎のオートの有効/無効
+	// 起動後に「/auto」コマンドで切り替えることもできます。
+	Auto: [
+		false,  // player01
+		false,  // player02
+		false,  // player03
+		false,  // player04
+
+		false,  // player05
+		false,  // player06
+		false,  // player07
+		false,  // player08
+
+		false,  // player09
+		false,  // player10
+		false,  // player11
+		false,  // player12
+
+		false,  // player13
+		false,  // player14
+		false,  // player15
+	],
+	
+	// 選曲画面でのデモ音源再生の有効/無効
+	// 起動後に「/demo」コマンドで切り替えることもできます。
+	// true: 有効, false: 無効
+	Demo: true,
+	
+	// デバッグウィンドウの表示
+	// 起動後に「/debug」コマンドで切り替えることもできます。
+	// true: 表示, false: 非表示
+	Debug: false,
+
+	// 最新版のバージョンチェックを行うかどうか
+	// true: チェックする, false: チェックしない
+	CheckUpdate: true,
+
+	// 選曲画面設定
+	SongSelect: {
+		// 音源存在チェックをするかどうか
+		// true: チェックする, false: チェックしない
+		CheckWaveExist: true,
+		SaveData: {
+			// 読込方法
+			// 0:譜面を選択したタイミングでロード。選択から外れたらアンロード。
+			// 1:譜面を選択したタイミングでロード。起動中はアンロードしない。
+			// 2:選曲画面を表示後、裏で全譜面のセーブデータをロードする。
+			// 3:画面表示前にすべてをロードする。
+			LoadingType: 0,
+		}
+	},
+
+	// 演奏時設定
+	Play: {
+		
+	},
+
+	// 設定画面設定
+	Config: {
+		Port: 4080,
+	},
+
+	// 遠隔設定
+	Remote: {
+		Port: 62000
+	}
+
+	// スクショ設定
+	Screenshot: {
+		OutputFolder: "Screenshots",
+	},
+}

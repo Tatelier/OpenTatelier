@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="AuthConnect\AuthConnectScene.cpp" />
+    <ClCompile Include="Guard.cpp" />
+    <ClCompile Include="hjson\hjson-ex.cpp" />
+    <ClCompile Include="hjson\hjson_decode.cpp" />
+    <ClCompile Include="hjson\hjson_encode.cpp" />
+    <ClCompile Include="hjson\hjson_parsenumber.cpp" />
+    <ClCompile Include="hjson\hjson_value.cpp" />
+    <ClCompile Include="Input.cpp" />
+    <ClCompile Include="InputControlItem.cpp" />
+    <ClCompile Include="Loading\LoadingScene.cpp" />
+    <ClCompile Include="MainConfig.cpp" />
+    <ClCompile Include="SceneBase.cpp" />
+    <ClCompile Include="SceneControlMaster.cpp" />
+    <ClCompile Include="SongSelect\SelectItemControl.cpp" />
+    <ClCompile Include="SongSelect\ScoreOverview.cpp" />
+    <ClCompile Include="Share.cpp" />
+    <ClCompile Include="SongSelect\Background.cpp" />
+    <ClCompile Include="SongSelect\Category.cpp" />
+    <ClCompile Include="SongSelect\CategoryControl.cpp" />
+    <ClCompile Include="SongSelect\Demo.cpp" />
+    <ClCompile Include="SongSelect\InputControlItemSongSelect.cpp" />
+    <ClCompile Include="SongSelect\Item.cpp" />
+    <ClCompile Include="SongSelect\ItemControl.cpp" />
+    <ClCompile Include="SongSelect\SongSelectScene.cpp" />
+    <ClCompile Include="Supervision.cpp" />
+    <ClCompile Include="System\SystemDirectory.cpp" />
+    <ClCompile Include="Tatelier_API.cpp" />
+    <ClCompile Include="ThemeConfig.cpp" />
+    <ClCompile Include="ThemeControl.cpp" />
+    <ClCompile Include="Utility.cpp" />
+    <ClCompile Include="SongSelect\GenreSelectItem.cpp" />
+    <ClCompile Include="SongSelect\SelectItem.cpp" />
+    <ClCompile Include="SongSelect\ScoreSelectItem.cpp" />
+    <ClCompile Include="Error.cpp" />
+    <ClCompile Include="MyMessageBox.cpp" />
+    <ClCompile Include="SongSelect\BackSelectItem.cpp" />
+    <ClCompile Include="SongSelect\BackgroundInfo.cpp" />
+    <ClCompile Include="ImageLoadControl.cpp" />
+    <ClCompile Include="DxLibEx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AuthConnect\AuthConnectScene.h" />
+    <ClInclude Include="Guard.h" />
+    <ClInclude Include="hjson\hjson-ex.h" />
+    <ClInclude Include="hjson\hjson.h" />
+    <ClInclude Include="Input.h" />
+    <ClInclude Include="InputControlItem.h" />
+    <ClInclude Include="Loading\LoadingScene.h" />
+    <ClInclude Include="MainConfig.h" />
+    <ClInclude Include="SceneBase.h" />
+    <ClInclude Include="SceneControlMaster.h" />
+    <ClInclude Include="SongSelect\SelectItemControl.h" />
+    <ClInclude Include="Size2D.h" />
+    <ClInclude Include="SongSelect\ScoreOverview.h" />
+    <ClInclude Include="Share.h" />
+    <ClInclude Include="SongSelect\Background.h" />
+    <ClInclude Include="SongSelect\Category.h" />
+    <ClInclude Include="SongSelect\CategoryControl.h" />
+    <ClInclude Include="SongSelect\Demo.h" />
+    <ClInclude Include="SongSelect\InputControlItemSongSelect.h" />
+    <ClInclude Include="SongSelect\Item.h" />
+    <ClInclude Include="SongSelect\ItemControl.h" />
+    <ClInclude Include="SongSelect\SongSelectScene.h" />
+    <ClInclude Include="Supervision.h" />
+    <ClInclude Include="System\SystemDirectory.h" />
+    <ClInclude Include="Tatelier_API.h" />
+    <ClInclude Include="ThemeConfig.h" />
+    <ClInclude Include="ThemeControl.h" />
+    <ClInclude Include="Utility.h" />
+    <ClInclude Include="SongSelect\GenreSelectItem.h" />
+    <ClInclude Include="SongSelect\SelectItem.h" />
+    <ClInclude Include="SongSelect\ScoreSelectItem.h" />
+    <ClInclude Include="Error.h" />
+    <ClInclude Include="MyMessageBox.h" />
+    <ClInclude Include="SongSelect\BackSelectItem.h" />
+    <ClInclude Include="SongSelect\BackgroundInfo.h" />
+    <ClInclude Include="ImageLoadControl.h" />
+    <ClInclude Include="DxLibEx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Tatelier.Common.dll" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,22 @@
+{
+    Data: {
+        Word: {
+            Yes: "はい",
+            No: "いいえ",
+        }
+        Scene: {
+            SongSelect: {
+                MusicalScoreDecide: {
+                    BackgroundMusicNotFound: 
+                    '''
+                    音源ファイルが存在しません。
+                    そのまま演奏画面に移りますか？
+
+
+                    {{ MusicalScoreFilePath }}
+                    '''
+                }
+            }
+        }
+    }
+}

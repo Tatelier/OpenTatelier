@@ -1,0 +1,176 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Tatelier Remote</title>
+        <link rel="stylesheet" href="main.css" />
+        <script src="axios.min.js"></script>
+        <script src="vue.min.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <div class="main-menu">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="hamburger">
+                                <button>
+                                </button>
+                            </td>
+                            <td v-for="menu in mainMenu.elements">
+                                <button v-on:click="setState(menu)" :class="{ current: state == menu.stateName, enabled: menu.name == '' }">
+                                    <div class="ico" :class="[menu.stateName]">
+                                    </div>
+                                    <p>{{ menu.name }}</p>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <transition name="vif">
+                <template v-if="state == 'score-select'">
+                    <div class="page">
+                        <div class="main-contains">
+                            <div class="score-list">
+                                <div class="genre" v-for="g in genreList">
+                                    <p>{{ g.name }}</p>
+                                    <div class="score" v-for="s in g.scoreList">
+                                        <button v-on:click="scoreSelect(s)">{{ s.name }}</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment">
+                                <div class="comment-form">
+                                    <input type="text" class="comment-input">
+                                    <button class="comment-send-button">▶</button>
+                                </div>
+                            </div>
+                            <div class="loading" v-if="loading">
+                                
+                            </div>
+                            <!-- <div class="option">
+                                <div class="option-type" v-for="opt in options">
+                                    <p class="option-name">{{ opt.name }}</p>
+                                    <div class="option-item" v-for="item in opt.list">
+                                        <span class="">{{ item.name }}</span>
+                                        <input type="radio" v-if="item.type == 'radio'">
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </template>
+            </transition>
+            <transition name="vif">
+                <template v-if="state == 'player'">
+                    <div class="main-contains">
+                        <div class="page">
+                            <select class="">
+                                <option disabled value="">Please select one</option>
+                                <option>A</option>
+                                <option>B</option>
+                                <option>C</option>
+                            </select>
+                        </div>
+                    </div>
+                </template>
+            </transition>
+        </div>
+    </body>
+    <script>
+        var vue = new Vue({
+            el: "#app",
+            data: {
+                state: "score-select",
+                loading: false,
+                genreList: null,
+                play: {
+                    se: [
+                        {
+                            name: "Taiko",
+
+                        },
+                        {
+                            name: "Drum",
+
+                        },
+                    ]
+                },
+                mainMenu: {
+                    elements: [
+                        {
+                            name: "選曲",
+                            stateName: "score-select",
+                            icon: "assets/img/score-list.svg"
+                        },
+                        {
+                            name: "プレイヤー",
+                            stateName: "player",
+                            icon: "assets/img/player.svg"
+                        },
+                        {
+                            name: "",
+                            icon: "",
+                        },
+                        {
+                            name: "",
+                            icon: "",
+                        },
+                        {
+                            name: "",
+                            icon: "",
+                        },
+                    ]
+                },
+                options: [
+                    {
+                        name: "選曲",
+                        list: [
+                            {
+                                type: "radio",
+                                name: "デモ音源再生",
+                                action: {
+                                    type: "command",
+                                    command: "/demo"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            methods: {
+                scoreSelect: function(elem) {
+                    axios.post('./score-select', {
+                        index: elem.index
+                    });
+                },
+                setState: function(elem) {
+                    if(elem.name != "") {
+                        this.state = elem.stateName;
+                    }
+                }
+            },
+            mounted() {
+                axios.get('./init').then(response => {
+                    this.genreList = response.data.genreList
+                });
+            }
+        });
+
+        // $(function(){
+        //     $(".search-button").on('click', function(){
+        //         $.ajax({
+        //             url: "./search",
+        //             type: "GET",
+        //             data: {
+        //                 name: $(".name").val()
+        //             }
+        //         }).done(function(){
+
+        //         }).fail(function(){
+                    
+        //         })
+        //     });
+        // });
+    </script>
+</html>

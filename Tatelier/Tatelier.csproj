@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BBF9EE03-961A-420A-A61A-66828C5906FE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Tatelier</RootNamespace>
+    <AssemblyName>Tatelier</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <NoWarn>CS1030</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>none</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <AllowedReferenceRelatedFileExtensions>
+      *.xml;
+      *.pdb
+    </AllowedReferenceRelatedFileExtensions>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Tatelier.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;REMOTE_DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>none</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <AllowedReferenceRelatedFileExtensions>
+      *.xml;
+      *.pdb
+    </AllowedReferenceRelatedFileExtensions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug-cpp|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug-cpp\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CPP_ON</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug-cpp|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug-cpp\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CPP_ON</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CSAudioConverter, Version=1.1.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\CSAudioConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="Hjson, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Hjson.3.0.0\lib\net40\Hjson.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="APNGImage.cs" />
+    <Compile Include="CalcData.cs" />
+    <Compile Include="DrawingOption.cs" />
+    <Compile Include="DxLib\FunctionModule.cs" />
+    <Compile Include="DxLib\TempScene.cs" />
+    <Compile Include="ElementInfo.cs" />
+    <Compile Include="FileDragObserver.cs" />
+    <Compile Include="HttpAPI\Express.cs" />
+    <Compile Include="MouseCursor.cs" />
+    <Compile Include="MouseDiff.cs" />
+    <Compile Include="Multi\INoteText.cs" />
+    <Compile Include="Play\Background3.cs" />
+    <Compile Include="Play\IHBScrollScoreRendererTarget.cs" />
+    <Compile Include="Play\IJudgeFramePoint.cs" />
+    <Compile Include="Play\INormalScoreRendererTarget.cs" />
+    <Compile Include="Play\IScoreRenderer.cs" />
+    <Compile Include="Play\HBScrollScoreRenderer.cs" />
+    <Compile Include="Play\NormalScoreRenderer.cs" />
+    <Compile Include="Play\NoteText.cs" />
+    <Compile Include="Play\UpdateState.cs" />
+    <Compile Include="RectF.cs" />
+    <Compile Include="ScoreSaveDataDecryptor.cs" />
+    <Compile Include="SceneType.cs" />
+    <Compile Include="Scene\TransitionToPlay.cs" />
+    <Compile Include="Scene\TransitionToResult.cs" />
+    <Compile Include="Scene\TranstionFromResultToSongSelect.cs" />
+    <Compile Include="SongSelect2.cs" />
+    <Compile Include="SongSelect\CourseType.cs" />
+    <Compile Include="SongSelect\CursorMoveComponent.cs" />
+    <Compile Include="SongSelect\IMusicalScoreSystem.cs" />
+    <Compile Include="SongSelect\ISongSelectTarget.cs" />
+    <Compile Include="SongSelect\PlayOption.cs" />
+    <Compile Include="SongSelect\PlayOptionNoteType.cs" />
+    <Compile Include="SongSelect\PlayOptionRenderer.cs" />
+    <Compile Include="SongSelect\PlayOptionSpecialType.cs" />
+    <Compile Include="SongSelect\Status.cs" />
+    <Compile Include="SoundGroupShare.cs" />
+    <Compile Include="Supervision.Command.cs" />
+    <Compile Include="TatelierException.cs" />
+    <Compile Include="TatelierRemoteManager.cs" />
+    <Compile Include="TatelierServerManager.cs" />
+    <Compile Include="AuthConnect.cs" />
+    <Compile Include="Control.Button.cs" />
+    <Compile Include="Control.Toggle.cs" />
+    <Compile Include="Define.cs" />
+    <Compile Include="Error.cs" />
+    <Compile Include="FontLoadControl.cs" />
+    <Compile Include="HtmlControl\Checkbox.cs" />
+    <Compile Include="Coroutine\Coroutine.cs" />
+    <Compile Include="HtmlControl\Body.cs" />
+    <Compile Include="ImageDrawStyleSheet.cs" />
+    <Compile Include="ImageLoadControl.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="ModuleControl.cs" />
+    <Compile Include="Multi\MusicalScoreEdit.cs" />
+    <Compile Include="Play\MeasureLineImageControl.cs" />
+    <Compile Include="Play\Dancer.cs" />
+    <Compile Include="Play\EmptySong.cs" />
+    <Compile Include="Play\INoteFlyEffect.cs" />
+    <Compile Include="Play\ISong.cs" />
+    <Compile Include="Play\JudgeFrame.cs" />
+    <Compile Include="Load.cs" />
+    <Compile Include="LoadControlBase.cs" />
+    <Compile Include="Play\Chara.cs" />
+    <Compile Include="Mouse.cs" />
+    <Compile Include="PlayerInfo.cs" />
+    <Compile Include="Play\GogoCondition.cs" />
+    <Compile Include="IImage.cs" />
+    <Compile Include="ImageMethodManager.cs" />
+    <Compile Include="NormalImage.cs" />
+    <Compile Include="Play\BalloonControl.cs" />
+    <Compile Include="Play\BPMStatusControl.cs" />
+    <Compile Include="Play\BranchCondition.cs" />
+    <Compile Include="Command.cs" />
+    <Compile Include="ConnectManager.cs" />
+    <Compile Include="Play\Lyric.cs" />
+    <Compile Include="Play\LyricImageControl.cs" />
+    <Compile Include="Play\MeasureLineInfo.cs" />
+    <Compile Include="Play\NoteFlyEffectEmpty.cs" />
+    <Compile Include="Play\NoteInfo.cs" />
+    <Compile Include="Play\Player.cs" />
+    <Compile Include="Play\PlayInputItemControl.cs" />
+    <Compile Include="Play\PlayStyle.cs" />
+    <Compile Include="Play\ScrollSpeedInfo.cs" />
+    <Compile Include="Progress\Progress.cs" />
+    <Compile Include="Progress\ProgressControl.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Report.cs" />
+    <Compile Include="Result\ResultData.cs" />
+    <Compile Include="Scene\Config.cs" />
+    <Compile Include="Play\PlayInputItem.cs" />
+    <Compile Include="SongSelect\ClearType.cs" />
+    <Compile Include="SongSelect\Course.cs" />
+    <Compile Include="CSSTransform.cs" />
+    <Compile Include="DebugWindow.cs" />
+    <Compile Include="SongSelect\FrameImage.cs" />
+    <Compile Include="Play\InnerStatus.cs" />
+    <Compile Include="Play\JudgeImageControl.cs" />
+    <Compile Include="LogWindow.cs" />
+    <Compile Include="MainConfig.cs" />
+    <Compile Include="Play\MeasureInfo.cs" />
+    <Compile Include="Play\MeasureStatusControl.cs" />
+    <Compile Include="Play\NoteFieldControl.cs" />
+    <Compile Include="Play\NoteFlyEffect.cs" />
+    <Compile Include="Play\NoteImageControl.cs" />
+    <Compile Include="Play\ComboImageControl.cs" />
+    <Compile Include="Play\HitImageControl.cs" />
+    <Compile Include="Play\InputControlItemPlay.cs" />
+    <Compile Include="Play\Other.cs" />
+    <Compile Include="Play\PauseScreen.cs" />
+    <Compile Include="Play\PlayDefine.cs" />
+    <Compile Include="Play\PlayerConfig.cs" />
+    <Compile Include="Play\RollNumberImageControl.cs" />
+    <Compile Include="Play\Title.cs" />
+    <Compile Include="Result\Player.cs" />
+    <Compile Include="Scene\AuthNG.cs" />
+    <Compile Include="Play\Song.cs" />
+    <Compile Include="Repeat.cs" />
+    <Compile Include="Result\Background.cs" />
+    <Compile Include="Result\ScoreBoard.cs" />
+    <Compile Include="Result\ScoreNumber.cs" />
+    <Compile Include="Scene\APNGDevelop.cs" />
+    <Compile Include="Play\BalloonNumberImageControl.cs" />
+    <Compile Include="Control.cs" />
+    <Compile Include="Scene\Development.cs" />
+    <Compile Include="Scene\Multi.cs" />
+    <Compile Include="Multi\MultiItem.cs" />
+    <Compile Include="Multi\MultiItemControl.cs" />
+    <Compile Include="Multi\MultiItemInfo.cs" />
+    <Compile Include="SongSelect\BackSelectItem.cs" />
+    <Compile Include="SongSelect\CourseFrame.cs" />
+    <Compile Include="SongSelect\CourseSelectCursor.cs" />
+    <Compile Include="SongSelect\Genre.cs" />
+    <Compile Include="SongSelect\GenreControl.cs" />
+    <Compile Include="SongSelect\CourseSelectFrameControl.cs" />
+    <Compile Include="SongSelect\IItem.cs" />
+    <Compile Include="SongSelect\InputControlItemSongSelect.cs" />
+    <Compile Include="SongSelect\ISelectItem.cs" />
+    <Compile Include="SongSelect\ItemImageInfo.cs" />
+    <Compile Include="Scene\Result.cs" />
+    <Compile Include="Play\ScoreNumberImageControl.cs" />
+    <Compile Include="Play\TaikoImageControl.cs" />
+    <Compile Include="Play\TaikoSEControl.cs" />
+    <Compile Include="SongSelect\MusicalScoreSaveData.cs" />
+    <Compile Include="SongSelect\MusicalScoreSaveDataCourse.cs" />
+    <Compile Include="SongSelect\MusicalScoreSaveDataUtility.cs" />
+    <Compile Include="SongSelect\MusicalScoreSelectItemImage.cs" />
+    <Compile Include="SongSelect\OrderType.cs" />
+    <Compile Include="SongSelect\Player.cs" />
+    <Compile Include="SongSelect\PlayerMusicalScore.cs" />
+    <Compile Include="SongSelect\PlayerScore.cs" />
+    <Compile Include="SongSelect\ScoreFileType.cs" />
+    <Compile Include="SongSelect\SelectItemRenderer.cs" />
+    <Compile Include="SongSelect\SongSelectConfig.cs" />
+    <Compile Include="SongSelect\SongSelectItemType.cs" />
+    <Compile Include="SongSelect\SplitImageInfo.cs" />
+    <Compile Include="SliceImage.cs" />
+    <Compile Include="SongSelect\Demo.cs" />
+    <Compile Include="SongSelect\GenreSelectItem.cs" />
+    <Compile Include="IInputControlItem.cs" />
+    <Compile Include="Image3.cs" />
+    <Compile Include="Input.cs" />
+    <Compile Include="InputControl.cs" />
+    <Compile Include="InputControlItem.cs" />
+    <Compile Include="ITransform.cs" />
+    <Compile Include="ITransform2.cs" />
+    <Compile Include="LoadImageHandleInfo.cs" />
+    <Compile Include="MyMessageBox.cs" />
+    <Compile Include="Pivot.cs" />
+    <Compile Include="PositionType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SceneBase.cs" />
+    <Compile Include="SceneControl.cs" />
+    <Compile Include="Scene\Play.cs" />
+    <Compile Include="Scene\SongSelect.cs" />
+    <Compile Include="SongSelect\SelectInfo.cs" />
+    <Compile Include="SongSelect\SelectItemControl.cs" />
+    <Compile Include="Share.cs" />
+    <Compile Include="SongSelect\Background.cs" />
+    <Compile Include="SongSelect\SoundEffect.cs" />
+    <Compile Include="Play\SoulGauge.cs" />
+    <Compile Include="Sound\SoundGroup.cs" />
+    <Compile Include="Sound\SoundGroupControl.cs" />
+    <Compile Include="Play\StatusType.cs" />
+    <Compile Include="SplashWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashWindow.Designer.cs">
+      <DependentUpon>SplashWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StringBuilderExtensions.cs" />
+    <Compile Include="Supervision.cs" />
+    <Compile Include="TatelierClientManager.cs" />
+    <Compile Include="ThemeConfig.cs" />
+    <Compile Include="SongSelect\MusicalScore.cs" />
+    <Compile Include="SongSelect\MusicalScoreSelectItem.cs" />
+    <Compile Include="TokenInfo.cs" />
+    <Compile Include="Transform.cs" />
+    <Compile Include="Transform3.cs" />
+    <Compile Include="TransformExtensions.cs" />
+    <Compile Include="TransitionShare.cs" />
+    <Compile Include="Utility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MainConfig.hjson">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="README.adoc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tatelier.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\audio-convert\audio-convert.csproj">
+      <Project>{a15d5ac0-d1ac-451c-a7dd-e2db77395648}</Project>
+      <Name>audio-convert</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\hjson-cs-ex\src\HjsonEx\HjsonEx.csproj">
+      <Project>{43a279b2-89af-43ec-a72e-5669aa268368}</Project>
+      <Name>HjsonEx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\tatelier-engine\src\Tatelier.Engine\Tatelier.Engine.csproj">
+      <Project>{eea77cd2-f5bf-4215-981e-864c0093e7e2}</Project>
+      <Name>Tatelier.Engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\tatelier-interface\tatelier-interface\Tatelier.Interface\Tatelier.Interface.csproj">
+      <Project>{281E1965-E446-46C2-8513-2654879C1715}</Project>
+      <Name>Tatelier.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\tatelier-score\src\Tatelier.Score\Tatelier.Score.csproj">
+      <Project>{d97aa506-288b-424c-aa22-61ef4c7728d3}</Project>
+      <Name>Tatelier.Score</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tatelier.Common\Tatelier.Common.csproj">
+      <Project>{1b81d1d7-556d-4039-855c-756c4aff1e39}</Project>
+      <Name>Tatelier.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tatelier.DxDLL\Tatelier.DxLibDLL.csproj">
+      <Project>{ec796219-3843-4882-a8bf-4fe0248775fa}</Project>
+      <Name>Tatelier.DxLibDLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tatelier.Interface.Module.DiscordRPC\Tatelier.Interface.Module.DiscordRPC.csproj">
+      <Project>{5b7c0f1c-3bef-4ce0-a0f0-66d5b12356fe}</Project>
+      <Name>Tatelier.Interface.Module.DiscordRPC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tatelier.Network\Tatelier.Network.csproj">
+      <Project>{f1a5fe31-a228-4982-997e-d337b90a1760}</Project>
+      <Name>Tatelier.Network</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TatelierPackageManager\TatelierPackageManager.csproj">
+      <Project>{409e6aab-c8a5-4abe-b4e5-e77f64b27391}</Project>
+      <Name>TatelierPackageManager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashWindow.resx">
+      <DependentUpon>SplashWindow.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>if not exist $(TargetDir)Defaults mkdir $(TargetDir)Defaults
+xcopy $(ProjectDir)Defaults $(TargetDir)Defaults\ /D /S /R /Y /I /K
+
+if not exist $(TargetDir)Resources mkdir $(TargetDir)Resources
+xcopy $(ProjectDir)..\tatelier-defaultresources\Resources $(TargetDir)Resources\ /D /S /R /Y /I /K
+
+if not exist $(TargetDir)ConfigServer mkdir $(TargetDir)ConfigServer
+xcopy $(ProjectDir)..\ConfigServer $(TargetDir)ConfigServer\ /D /S /R /Y /I /K
+
+if not exist $(TargetDir)RemoteServer mkdir $(TargetDir)RemoteServer
+xcopy $(ProjectDir)..\RemoteServer\src $(TargetDir)RemoteServer\ /D /S /R /Y /I /K
+
+if "$(PlatformName)" == "x64" (
+  xcopy "$(SolutionDir)Tatelier.DxDLL\x64" $(TargetDir) /D /S /R /Y /I /K
+  rem xcopy "$(SolutionDir)Tatelier.Discord\x64" $(TargetDir) /D /S /R /Y /I /K
+)
+
+if "$(PlatformName)" == "x86" (
+  xcopy "$(SolutionDir)Tatelier.DxDLL\x86" $(TargetDir) /D /S /R /Y /I /K
+  rem xcopy "$(SolutionDir)Tatelier.Discord\x86" $(TargetDir) /D /S /R /Y /I /K
+)
+
+if "$(ConfigurationName)" == "Release" (
+  Confuser.CLI -n "$(SolutionDir)Confuse-$(PlatformName).crproj"
+)</PostBuildEvent>
+  </PropertyGroup>
+</Project>

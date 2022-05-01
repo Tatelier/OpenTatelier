@@ -1,0 +1,210 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tatelier", "Tatelier\Tatelier.csproj", "{BBF9EE03-961A-420A-A61A-66828C5906FE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{281E1965-E446-46C2-8513-2654879C1715} = {281E1965-E446-46C2-8513-2654879C1715}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tatelier.Common", "Tatelier.Common\Tatelier.Common.csproj", "{1B81D1D7-556D-4039-855C-756C4AFF1E39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestForTatelier", "UnitTestForTatelier\UnitTestForTatelier.csproj", "{C7D4A31F-1C88-4135-9C0F-5DD0B1646FBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tatelier.DxLibDLL", "Tatelier.DxDLL\Tatelier.DxLibDLL.csproj", "{EC796219-3843-4882-A8BF-4FE0248775FA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tatelier.Nucleus", "Tatelier.Nucleus\Tatelier.Nucleus.vcxproj", "{C3CDADC1-800A-4CED-8621-7414192C7807}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvenientCommonForCS", "ConvenientCommonForCS\ConvenientCommonForCS.csproj", "{33F699ED-332E-477D-8554-A4C33124243E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TatelierPackageManager", "TatelierPackageManager\TatelierPackageManager.csproj", "{409E6AAB-C8A5-4ABE-B4E5-E77F64B27391}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tatelier.Interface.Module.DiscordRPC", "Tatelier.Interface.Module.DiscordRPC\Tatelier.Interface.Module.DiscordRPC.csproj", "{5B7C0F1C-3BEF-4CE0-A0F0-66D5B12356FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tatelier.Network", "Tatelier.Network\Tatelier.Network.csproj", "{F1A5FE31-A228-4982-997E-D337B90A1760}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tatelier.Interface", "tatelier-interface\tatelier-interface\Tatelier.Interface\Tatelier.Interface.csproj", "{281E1965-E446-46C2-8513-2654879C1715}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HjsonEx", "hjson-cs-ex\src\HjsonEx\HjsonEx.csproj", "{43A279B2-89AF-43EC-A72E-5669AA268368}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "audio-convert", "audio-convert\audio-convert.csproj", "{A15D5AC0-D1AC-451C-A7DD-E2DB77395648}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tatelier.Score", "tatelier-score\src\Tatelier.Score\Tatelier.Score.csproj", "{D97AA506-288B-424C-AA22-61EF4C7728D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tatelier.Engine", "tatelier-engine\src\Tatelier.Engine\Tatelier.Engine.csproj", "{EEA77CD2-F5BF-4215-981E-864C0093E7E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Debug-cpp|x64 = Debug-cpp|x64
+		Debug-cpp|x86 = Debug-cpp|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBF9EE03-961A-420A-A61A-66828C5906FE}.Debug|x64.ActiveCfg = Debug|x64
+		{BBF9EE03-961A-420A-A61A-66828C5906FE}.Debug|x64.Build.0 = Debug|x64
+		{BBF9EE03-961A-420A-A61A-66828C5906FE}.Debug|x86.ActiveCfg = Debug|x86
+		{BBF9EE03-961A-420A-A61A-66828C5906FE}.Debug|x86.Build.0 = Debug|x86
+		{BBF9EE03-961A-420A-A61A-66828C5906FE}.Debug-cpp|x64.ActiveCfg = Debug-cpp|x64
+		{BBF9EE03-961A-420A-A61A-66828C5906FE}.Debug-cpp|x64.Build.0 = Debug-cpp|x64
+		{BBF9EE03-961A-420A-A61A-66828C5906FE}.Debug-cpp|x86.ActiveCfg = Debug-cpp|x86
+		{BBF9EE03-961A-420A-A61A-66828C5906FE}.Debug-cpp|x86.Build.0 = Debug-cpp|x86
+		{BBF9EE03-961A-420A-A61A-66828C5906FE}.Release|x64.ActiveCfg = Release|x64
+		{BBF9EE03-961A-420A-A61A-66828C5906FE}.Release|x64.Build.0 = Release|x64
+		{BBF9EE03-961A-420A-A61A-66828C5906FE}.Release|x86.ActiveCfg = Release|x86
+		{BBF9EE03-961A-420A-A61A-66828C5906FE}.Release|x86.Build.0 = Release|x86
+		{1B81D1D7-556D-4039-855C-756C4AFF1E39}.Debug|x64.ActiveCfg = Debug|x64
+		{1B81D1D7-556D-4039-855C-756C4AFF1E39}.Debug|x64.Build.0 = Debug|x64
+		{1B81D1D7-556D-4039-855C-756C4AFF1E39}.Debug|x86.ActiveCfg = Debug|x86
+		{1B81D1D7-556D-4039-855C-756C4AFF1E39}.Debug|x86.Build.0 = Debug|x86
+		{1B81D1D7-556D-4039-855C-756C4AFF1E39}.Debug-cpp|x64.ActiveCfg = Debug|x64
+		{1B81D1D7-556D-4039-855C-756C4AFF1E39}.Debug-cpp|x64.Build.0 = Debug|x64
+		{1B81D1D7-556D-4039-855C-756C4AFF1E39}.Debug-cpp|x86.ActiveCfg = Debug|x86
+		{1B81D1D7-556D-4039-855C-756C4AFF1E39}.Debug-cpp|x86.Build.0 = Debug|x86
+		{1B81D1D7-556D-4039-855C-756C4AFF1E39}.Release|x64.ActiveCfg = Release|x64
+		{1B81D1D7-556D-4039-855C-756C4AFF1E39}.Release|x64.Build.0 = Release|x64
+		{1B81D1D7-556D-4039-855C-756C4AFF1E39}.Release|x86.ActiveCfg = Release|x86
+		{1B81D1D7-556D-4039-855C-756C4AFF1E39}.Release|x86.Build.0 = Release|x86
+		{C7D4A31F-1C88-4135-9C0F-5DD0B1646FBF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C7D4A31F-1C88-4135-9C0F-5DD0B1646FBF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C7D4A31F-1C88-4135-9C0F-5DD0B1646FBF}.Debug-cpp|x64.ActiveCfg = Debug|Any CPU
+		{C7D4A31F-1C88-4135-9C0F-5DD0B1646FBF}.Debug-cpp|x86.ActiveCfg = Debug|Any CPU
+		{C7D4A31F-1C88-4135-9C0F-5DD0B1646FBF}.Release|x64.ActiveCfg = Release|Any CPU
+		{C7D4A31F-1C88-4135-9C0F-5DD0B1646FBF}.Release|x86.ActiveCfg = Release|Any CPU
+		{EC796219-3843-4882-A8BF-4FE0248775FA}.Debug|x64.ActiveCfg = Debug|x64
+		{EC796219-3843-4882-A8BF-4FE0248775FA}.Debug|x64.Build.0 = Debug|x64
+		{EC796219-3843-4882-A8BF-4FE0248775FA}.Debug|x86.ActiveCfg = Debug|x86
+		{EC796219-3843-4882-A8BF-4FE0248775FA}.Debug|x86.Build.0 = Debug|x86
+		{EC796219-3843-4882-A8BF-4FE0248775FA}.Debug-cpp|x64.ActiveCfg = Debug|x64
+		{EC796219-3843-4882-A8BF-4FE0248775FA}.Debug-cpp|x64.Build.0 = Debug|x64
+		{EC796219-3843-4882-A8BF-4FE0248775FA}.Debug-cpp|x86.ActiveCfg = Debug|x86
+		{EC796219-3843-4882-A8BF-4FE0248775FA}.Debug-cpp|x86.Build.0 = Debug|x86
+		{EC796219-3843-4882-A8BF-4FE0248775FA}.Release|x64.ActiveCfg = Release|x64
+		{EC796219-3843-4882-A8BF-4FE0248775FA}.Release|x64.Build.0 = Release|x64
+		{EC796219-3843-4882-A8BF-4FE0248775FA}.Release|x86.ActiveCfg = Release|x86
+		{EC796219-3843-4882-A8BF-4FE0248775FA}.Release|x86.Build.0 = Release|x86
+		{C3CDADC1-800A-4CED-8621-7414192C7807}.Debug|x64.ActiveCfg = Debug|x64
+		{C3CDADC1-800A-4CED-8621-7414192C7807}.Debug|x86.ActiveCfg = Debug|Win32
+		{C3CDADC1-800A-4CED-8621-7414192C7807}.Debug-cpp|x64.ActiveCfg = Debug-cpp|x64
+		{C3CDADC1-800A-4CED-8621-7414192C7807}.Debug-cpp|x64.Build.0 = Debug-cpp|x64
+		{C3CDADC1-800A-4CED-8621-7414192C7807}.Debug-cpp|x86.ActiveCfg = Debug-cpp|Win32
+		{C3CDADC1-800A-4CED-8621-7414192C7807}.Debug-cpp|x86.Build.0 = Debug-cpp|Win32
+		{C3CDADC1-800A-4CED-8621-7414192C7807}.Release|x64.ActiveCfg = Release|x64
+		{C3CDADC1-800A-4CED-8621-7414192C7807}.Release|x86.ActiveCfg = Release|Win32
+		{33F699ED-332E-477D-8554-A4C33124243E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{33F699ED-332E-477D-8554-A4C33124243E}.Debug|x64.Build.0 = Debug|Any CPU
+		{33F699ED-332E-477D-8554-A4C33124243E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{33F699ED-332E-477D-8554-A4C33124243E}.Debug|x86.Build.0 = Debug|Any CPU
+		{33F699ED-332E-477D-8554-A4C33124243E}.Debug-cpp|x64.ActiveCfg = Debug|Any CPU
+		{33F699ED-332E-477D-8554-A4C33124243E}.Debug-cpp|x64.Build.0 = Debug|Any CPU
+		{33F699ED-332E-477D-8554-A4C33124243E}.Debug-cpp|x86.ActiveCfg = Debug|Any CPU
+		{33F699ED-332E-477D-8554-A4C33124243E}.Debug-cpp|x86.Build.0 = Debug|Any CPU
+		{33F699ED-332E-477D-8554-A4C33124243E}.Release|x64.ActiveCfg = Release|Any CPU
+		{33F699ED-332E-477D-8554-A4C33124243E}.Release|x64.Build.0 = Release|Any CPU
+		{33F699ED-332E-477D-8554-A4C33124243E}.Release|x86.ActiveCfg = Release|Any CPU
+		{33F699ED-332E-477D-8554-A4C33124243E}.Release|x86.Build.0 = Release|Any CPU
+		{409E6AAB-C8A5-4ABE-B4E5-E77F64B27391}.Debug|x64.ActiveCfg = Debug|x64
+		{409E6AAB-C8A5-4ABE-B4E5-E77F64B27391}.Debug|x64.Build.0 = Debug|x64
+		{409E6AAB-C8A5-4ABE-B4E5-E77F64B27391}.Debug|x86.ActiveCfg = Debug|x86
+		{409E6AAB-C8A5-4ABE-B4E5-E77F64B27391}.Debug|x86.Build.0 = Debug|x86
+		{409E6AAB-C8A5-4ABE-B4E5-E77F64B27391}.Debug-cpp|x64.ActiveCfg = Debug|Any CPU
+		{409E6AAB-C8A5-4ABE-B4E5-E77F64B27391}.Debug-cpp|x64.Build.0 = Debug|Any CPU
+		{409E6AAB-C8A5-4ABE-B4E5-E77F64B27391}.Debug-cpp|x86.ActiveCfg = Debug|Any CPU
+		{409E6AAB-C8A5-4ABE-B4E5-E77F64B27391}.Debug-cpp|x86.Build.0 = Debug|Any CPU
+		{409E6AAB-C8A5-4ABE-B4E5-E77F64B27391}.Release|x64.ActiveCfg = Release|x64
+		{409E6AAB-C8A5-4ABE-B4E5-E77F64B27391}.Release|x64.Build.0 = Release|x64
+		{409E6AAB-C8A5-4ABE-B4E5-E77F64B27391}.Release|x86.ActiveCfg = Release|Any CPU
+		{409E6AAB-C8A5-4ABE-B4E5-E77F64B27391}.Release|x86.Build.0 = Release|Any CPU
+		{5B7C0F1C-3BEF-4CE0-A0F0-66D5B12356FE}.Debug|x64.ActiveCfg = Debug|x64
+		{5B7C0F1C-3BEF-4CE0-A0F0-66D5B12356FE}.Debug|x64.Build.0 = Debug|x64
+		{5B7C0F1C-3BEF-4CE0-A0F0-66D5B12356FE}.Debug|x86.ActiveCfg = Debug|x86
+		{5B7C0F1C-3BEF-4CE0-A0F0-66D5B12356FE}.Debug|x86.Build.0 = Debug|x86
+		{5B7C0F1C-3BEF-4CE0-A0F0-66D5B12356FE}.Debug-cpp|x64.ActiveCfg = Debug|Any CPU
+		{5B7C0F1C-3BEF-4CE0-A0F0-66D5B12356FE}.Debug-cpp|x64.Build.0 = Debug|Any CPU
+		{5B7C0F1C-3BEF-4CE0-A0F0-66D5B12356FE}.Debug-cpp|x86.ActiveCfg = Debug|Any CPU
+		{5B7C0F1C-3BEF-4CE0-A0F0-66D5B12356FE}.Debug-cpp|x86.Build.0 = Debug|Any CPU
+		{5B7C0F1C-3BEF-4CE0-A0F0-66D5B12356FE}.Release|x64.ActiveCfg = Release|Any CPU
+		{5B7C0F1C-3BEF-4CE0-A0F0-66D5B12356FE}.Release|x64.Build.0 = Release|Any CPU
+		{5B7C0F1C-3BEF-4CE0-A0F0-66D5B12356FE}.Release|x86.ActiveCfg = Release|Any CPU
+		{5B7C0F1C-3BEF-4CE0-A0F0-66D5B12356FE}.Release|x86.Build.0 = Release|Any CPU
+		{F1A5FE31-A228-4982-997E-D337B90A1760}.Debug|x64.ActiveCfg = Debug|x64
+		{F1A5FE31-A228-4982-997E-D337B90A1760}.Debug|x64.Build.0 = Debug|x64
+		{F1A5FE31-A228-4982-997E-D337B90A1760}.Debug|x86.ActiveCfg = Debug|x86
+		{F1A5FE31-A228-4982-997E-D337B90A1760}.Debug|x86.Build.0 = Debug|x86
+		{F1A5FE31-A228-4982-997E-D337B90A1760}.Debug-cpp|x64.ActiveCfg = Debug|Any CPU
+		{F1A5FE31-A228-4982-997E-D337B90A1760}.Debug-cpp|x64.Build.0 = Debug|Any CPU
+		{F1A5FE31-A228-4982-997E-D337B90A1760}.Debug-cpp|x86.ActiveCfg = Debug|Any CPU
+		{F1A5FE31-A228-4982-997E-D337B90A1760}.Debug-cpp|x86.Build.0 = Debug|Any CPU
+		{F1A5FE31-A228-4982-997E-D337B90A1760}.Release|x64.ActiveCfg = Release|Any CPU
+		{F1A5FE31-A228-4982-997E-D337B90A1760}.Release|x64.Build.0 = Release|Any CPU
+		{F1A5FE31-A228-4982-997E-D337B90A1760}.Release|x86.ActiveCfg = Release|Any CPU
+		{F1A5FE31-A228-4982-997E-D337B90A1760}.Release|x86.Build.0 = Release|Any CPU
+		{281E1965-E446-46C2-8513-2654879C1715}.Debug|x64.ActiveCfg = Debug|x64
+		{281E1965-E446-46C2-8513-2654879C1715}.Debug|x64.Build.0 = Debug|x64
+		{281E1965-E446-46C2-8513-2654879C1715}.Debug|x86.ActiveCfg = Debug|x86
+		{281E1965-E446-46C2-8513-2654879C1715}.Debug|x86.Build.0 = Debug|x86
+		{281E1965-E446-46C2-8513-2654879C1715}.Debug-cpp|x64.ActiveCfg = Debug|x64
+		{281E1965-E446-46C2-8513-2654879C1715}.Debug-cpp|x64.Build.0 = Debug|x64
+		{281E1965-E446-46C2-8513-2654879C1715}.Debug-cpp|x86.ActiveCfg = Debug|x86
+		{281E1965-E446-46C2-8513-2654879C1715}.Debug-cpp|x86.Build.0 = Debug|x86
+		{281E1965-E446-46C2-8513-2654879C1715}.Release|x64.ActiveCfg = Release|x64
+		{281E1965-E446-46C2-8513-2654879C1715}.Release|x64.Build.0 = Release|x64
+		{281E1965-E446-46C2-8513-2654879C1715}.Release|x86.ActiveCfg = Release|x86
+		{281E1965-E446-46C2-8513-2654879C1715}.Release|x86.Build.0 = Release|x86
+		{43A279B2-89AF-43EC-A72E-5669AA268368}.Debug|x64.ActiveCfg = Debug|x64
+		{43A279B2-89AF-43EC-A72E-5669AA268368}.Debug|x64.Build.0 = Debug|x64
+		{43A279B2-89AF-43EC-A72E-5669AA268368}.Debug|x86.ActiveCfg = Debug|x86
+		{43A279B2-89AF-43EC-A72E-5669AA268368}.Debug|x86.Build.0 = Debug|x86
+		{43A279B2-89AF-43EC-A72E-5669AA268368}.Debug-cpp|x64.ActiveCfg = Debug|x64
+		{43A279B2-89AF-43EC-A72E-5669AA268368}.Debug-cpp|x64.Build.0 = Debug|x64
+		{43A279B2-89AF-43EC-A72E-5669AA268368}.Debug-cpp|x86.ActiveCfg = Debug|x86
+		{43A279B2-89AF-43EC-A72E-5669AA268368}.Debug-cpp|x86.Build.0 = Debug|x86
+		{43A279B2-89AF-43EC-A72E-5669AA268368}.Release|x64.ActiveCfg = Release|x64
+		{43A279B2-89AF-43EC-A72E-5669AA268368}.Release|x64.Build.0 = Release|x64
+		{43A279B2-89AF-43EC-A72E-5669AA268368}.Release|x86.ActiveCfg = Release|x86
+		{43A279B2-89AF-43EC-A72E-5669AA268368}.Release|x86.Build.0 = Release|x86
+		{A15D5AC0-D1AC-451C-A7DD-E2DB77395648}.Debug|x64.ActiveCfg = Debug|x86
+		{A15D5AC0-D1AC-451C-A7DD-E2DB77395648}.Debug|x64.Build.0 = Debug|x86
+		{A15D5AC0-D1AC-451C-A7DD-E2DB77395648}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A15D5AC0-D1AC-451C-A7DD-E2DB77395648}.Debug|x86.Build.0 = Debug|Any CPU
+		{A15D5AC0-D1AC-451C-A7DD-E2DB77395648}.Debug-cpp|x64.ActiveCfg = Debug|Any CPU
+		{A15D5AC0-D1AC-451C-A7DD-E2DB77395648}.Debug-cpp|x64.Build.0 = Debug|Any CPU
+		{A15D5AC0-D1AC-451C-A7DD-E2DB77395648}.Debug-cpp|x86.ActiveCfg = Debug|Any CPU
+		{A15D5AC0-D1AC-451C-A7DD-E2DB77395648}.Debug-cpp|x86.Build.0 = Debug|Any CPU
+		{A15D5AC0-D1AC-451C-A7DD-E2DB77395648}.Release|x64.ActiveCfg = Release|Any CPU
+		{A15D5AC0-D1AC-451C-A7DD-E2DB77395648}.Release|x64.Build.0 = Release|Any CPU
+		{A15D5AC0-D1AC-451C-A7DD-E2DB77395648}.Release|x86.ActiveCfg = Release|Any CPU
+		{A15D5AC0-D1AC-451C-A7DD-E2DB77395648}.Release|x86.Build.0 = Release|Any CPU
+		{D97AA506-288B-424C-AA22-61EF4C7728D3}.Debug|x64.ActiveCfg = Debug|x64
+		{D97AA506-288B-424C-AA22-61EF4C7728D3}.Debug|x64.Build.0 = Debug|x64
+		{D97AA506-288B-424C-AA22-61EF4C7728D3}.Debug|x86.ActiveCfg = Debug|x86
+		{D97AA506-288B-424C-AA22-61EF4C7728D3}.Debug|x86.Build.0 = Debug|x86
+		{D97AA506-288B-424C-AA22-61EF4C7728D3}.Debug-cpp|x64.ActiveCfg = Debug|x64
+		{D97AA506-288B-424C-AA22-61EF4C7728D3}.Debug-cpp|x64.Build.0 = Debug|x64
+		{D97AA506-288B-424C-AA22-61EF4C7728D3}.Debug-cpp|x86.ActiveCfg = Debug|x64
+		{D97AA506-288B-424C-AA22-61EF4C7728D3}.Debug-cpp|x86.Build.0 = Debug|x64
+		{D97AA506-288B-424C-AA22-61EF4C7728D3}.Release|x64.ActiveCfg = Release|x64
+		{D97AA506-288B-424C-AA22-61EF4C7728D3}.Release|x64.Build.0 = Release|x64
+		{D97AA506-288B-424C-AA22-61EF4C7728D3}.Release|x86.ActiveCfg = Release|x64
+		{D97AA506-288B-424C-AA22-61EF4C7728D3}.Release|x86.Build.0 = Release|x64
+		{EEA77CD2-F5BF-4215-981E-864C0093E7E2}.Debug|x64.ActiveCfg = Debug|x64
+		{EEA77CD2-F5BF-4215-981E-864C0093E7E2}.Debug|x64.Build.0 = Debug|x64
+		{EEA77CD2-F5BF-4215-981E-864C0093E7E2}.Debug|x86.ActiveCfg = Debug|x86
+		{EEA77CD2-F5BF-4215-981E-864C0093E7E2}.Debug|x86.Build.0 = Debug|x86
+		{EEA77CD2-F5BF-4215-981E-864C0093E7E2}.Debug-cpp|x64.ActiveCfg = Debug|x64
+		{EEA77CD2-F5BF-4215-981E-864C0093E7E2}.Debug-cpp|x64.Build.0 = Debug|x64
+		{EEA77CD2-F5BF-4215-981E-864C0093E7E2}.Debug-cpp|x86.ActiveCfg = Debug|x86
+		{EEA77CD2-F5BF-4215-981E-864C0093E7E2}.Release|x64.ActiveCfg = Release|x64
+		{EEA77CD2-F5BF-4215-981E-864C0093E7E2}.Release|x64.Build.0 = Release|x64
+		{EEA77CD2-F5BF-4215-981E-864C0093E7E2}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08DCCB80-31AF-40AC-A135-A7C8D9FBDD0A}
+	EndGlobalSection
+EndGlobal

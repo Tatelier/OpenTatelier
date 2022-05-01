@@ -1,0 +1,6 @@
+{
+	// プレイヤー情報ファイルを指定
+	Players: [
+		"Resources/Player/Default.hjson" // player1
+	],
+}

@@ -1,0 +1,5 @@
+<project outputDir=".\" baseDir=".\Tatelier\bin\x86\Release" xmlns="http://confuser.codeplex.com">
+  <module path="Tatelier.exe">
+    <rule pattern="true" preset="normal" inherit="false" />
+  </module>
+</project>

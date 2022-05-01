@@ -1,0 +1,26 @@
+# Tatelier
+
+Tatelier is "Taiko Drum Master" simulator.
+
+Taiko + Atelier = Tatelier 
+
+## Environment
+* Windows 10
+* Visual Studio 2019
+* .Net Framework 4.7.2
+* DxLib (for C#)
+
+## Confuser Ex 2
+Release version obfuscated.
+
+- C:\ConfuserEx\Confuser.CLI.exe
+
+## Check Release
+* Release Mode
+* Tatelier.exe is confused.
+
+## Future
+Planning to move to C++ Only Project. Currently it is Windows only, but we are planning to support multiple platforms.
+
+## Finish
+This is private.

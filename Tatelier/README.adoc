@@ -1,0 +1,13 @@
+# Tatelier - v0.6.0
+
+## はじめに
+Tatelierは認証できた方のみが利用できるソフトとなっています。
+詳しくは、GitHub上のREADME.adoc, Manual.adocをご覧ください。
+
+- README.adoc
+
+https://github.com/Tatelier/Tatelier/blob/master/README.adoc
+
+- Manual.adoc
+
+https://github.com/Tatelier/Tatelier/blob/master/Manual/

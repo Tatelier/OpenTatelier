@@ -1,0 +1,197 @@
+* {
+    --background-color-01: #252d38;
+    --color: #ddd;
+    --font-size: 32px;
+}
+
+html {
+    font-size: var(--font-size);
+}
+
+body {
+    background-color: #252d38;
+    background-image: linear-gradient(45deg, #303843 25%, transparent 25%, transparent 75%, #303843 75%, #303843), linear-gradient(45deg, #303843 25%, transparent 25%, transparent 75%, #303843 75%, #303843);
+    background-position: 0 0, 25px 25px;
+    background-size: 50px 50px;
+    background-attachment: fixed;
+    color: var(--color);
+    font-family: "M PLUS Rounded 1c";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+}
+table{
+    margin:auto;
+}
+svg {
+    fill: white;
+}
+.main-menu {
+    position: relative;
+    height: 120px;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+}
+
+.main-menu table {
+    width: 100%;
+    table-layout: fixed;
+    background-color: #1b2129;
+    border: none;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.main-menu table tbody {
+    position: relative;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-menu table tbody tr {
+    position: relative;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu table tbody tr td.hamburger {
+    border: none;
+    width: 120px;
+}
+
+.main-menu table tbody tr td.hamburger button:hover{
+    background-color: transparent;
+    cursor: auto;
+}
+
+.main-menu table tbody tr td button.current {
+    background-color: #16A085 !important;
+}
+
+.main-menu table tbody tr td button.disabled {
+    opacity: 0;
+}
+
+
+.main-menu table tbody tr td {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu table tbody tr td button {
+    position: relative;
+    background-color: transparent;
+    height: 120px;
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+.main-menu table tbody tr td button .ico {
+    position: relative;
+    height: 48px;
+    width: 48px;
+    background-size: 100% 100%;
+    margin: 16px auto 0px;
+    filter: opacity(0.25);
+}
+
+.main-menu table tbody tr td button .ico.player {
+    background-image: url("assets/img/player.svg");
+}
+
+.main-menu table tbody tr td button .ico.score-select {
+    background-image: url("assets/img/score-select.svg");
+}
+
+.main-menu table tbody tr td button p {
+    position: relative;
+    color: var(--color);
+    font-size: 0.75rem;
+    margin: 8px auto 0px;
+}
+
+.page {
+    position: absolute;
+    width: 100%;
+}
+
+.main-contains {
+    position: relative;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: calc(100vh - 120px - 120px);
+    margin: 16px;
+}
+
+.score-list {
+    position: relative;
+    width: 100%;
+    margin-bottom: 96px;
+}
+
+.score-list .genre .score button {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 136px;
+    text-decoration: none;
+    margin-bottom: 12px;
+    color: #FFF;
+    font-size: 48px;
+    background: #2f3947;/*色*/
+    border-radius: 32px;/*角の丸み*/
+    box-shadow: inset 0 8px 0 rgba(255,255,255,0.2), inset 0 -8px 0 rgba(0, 0, 0, 0.05);
+    font-weight: bold;
+    border: solid 8px #384352;/*線色*/
+}
+
+.comment {
+    position: fixed;
+    height: 96px;
+    bottom: 0;
+}
+
+.comment-input {
+    background-color: #1b2129;
+    color: var(--color);
+    font-size: var(--font-size);
+    width: calc(100vw - 128px);
+    padding: 16px 32px 16px;
+    border-radius: 100px;
+    border: 1px solid rgb(55, 55, 55);
+}
+
+.comment-input:focus {
+    outline: none;
+}
+
+.comment-send-button {
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+}
+
+
+.option-name {
+    font-size: 16px;
+}
+
+
+
+
+.vif-enter-active, .vif-leave-active{
+    transition: opacity 0.2s
+}
+
+.vif-enter, .vif-leave-to{
+    opacity: 0;
+}
