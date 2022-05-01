@@ -109,33 +109,35 @@ namespace Tatelier.Connect
 					size = 389632;
 					token = "163B1A09-E348-4F07-B150-08B943899A75";
 #endif
+					// 
+					// authファイルの存在チェックをコメントアウト
+					// 
+					//string[] authFileNames = new string[]
+					//{
+					//	"Auth",
+					//	"Auth.txt"
+					//};
 
-					string[] authFileNames = new string[]
-					{
-						"Auth",
-						"Auth.txt"
-					};
+					//foreach(var fileName in authFileNames)
+					//{
+					//	if (File.Exists(Path.Combine(folder, fileName)))
+					//	{
+					//		token = File.ReadAllText(Path.Combine(folder, fileName));
+					//		break;
+					//	}
+					//}
 
-					foreach(var fileName in authFileNames)
-					{
-						if (File.Exists(Path.Combine(folder, fileName)))
-						{
-							token = File.ReadAllText(Path.Combine(folder, fileName));
-							break;
-						}
-					}
+     //               if (token.Length == 0)
+					//{
+					//	statusList[0] = 0x00000101;
+					//}
 
-                    if (token.Length == 0)
-					{
-						statusList[0] = 0x00000101;
-					}
-
-					// GUID形式かどうか
-					if (!Guid.TryParse(token, out _))
-					{
-						statusList[0] = 0x00000102;
-						return;
-					}
+					//// GUID形式かどうか
+					//if (!Guid.TryParse(token, out _))
+					//{
+					//	statusList[0] = 0x00000102;
+					//	return;
+					//}
 
 					var dic = new Dictionary<string, string>()
 					{
