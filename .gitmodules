@@ -1,0 +1,15 @@
+[submodule "hjson-cs-ex"]
+	path = hjson-cs-ex
+	url = git@github.com:Tatelier/hjson-cs-ex.git
+[submodule "tatelier-defaultresources"]
+	path = tatelier-defaultresources
+	url = git@github.com:Tatelier/tatelier-default-resources.git
+[submodule "tatelier-engine"]
+	path = tatelier-engine
+	url = git@github.com.own:Tatelier/tatelier-engine.git
+[submodule "tatelier-interface"]
+	path = tatelier-interface
+	url = https://github.com/Tatelier/tatelier-interface.git
+[submodule "tatelier-score"]
+	path = tatelier-score
+	url = git@github.com.own:Tatelier/tatelier-score.git
