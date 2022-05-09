@@ -2057,6 +2057,7 @@ namespace Tatelier.Scene
 
 		void RegistMusicalScoreSaveData()
 		{
+
 			for (int i = 0; i < players.Length; i++)
 			{
 				var result = Share.Singleton.Result[i];
