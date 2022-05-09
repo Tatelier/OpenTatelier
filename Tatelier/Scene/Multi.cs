@@ -647,8 +647,8 @@ namespace Tatelier.Scene
 
 			TaikoSEControl = new TaikoSEControl(new TaikoSEControlInfo
 			{
-				DonFilePath = Path.Combine(MainConfig.Singleton.ThemeFolderPath, @"Sound\Taiko\don.wav"),
-				KatFilePath = Path.Combine(MainConfig.Singleton.ThemeFolderPath, @"Sound\Taiko\kat.wav"),
+				DonFilePath = Path.Combine(MainConfig.Singleton.ThemeFolderPath, @"Sound\Taiko\OK.wav"),
+				KatFilePath = Path.Combine(MainConfig.Singleton.ThemeFolderPath, @"Sound\Taiko\Move.wav"),
 				BalloonFilePath = Path.Combine(MainConfig.Singleton.ThemeFolderPath, @"Sound\Taiko\balloon.wav"),
 			});
 
