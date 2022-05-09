@@ -133,10 +133,6 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="Tatelier.Score, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>H:\ゲーム\太鼓シミュ\Tatelier\Tatelier.Score.dll</HintPath>
-    </Reference>
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
@@ -378,6 +374,10 @@
     <ProjectReference Include="..\tatelier-interface\tatelier-interface\Tatelier.Interface\Tatelier.Interface.csproj">
       <Project>{281E1965-E446-46C2-8513-2654879C1715}</Project>
       <Name>Tatelier.Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\tatelier-score\src\Tatelier.Score\Tatelier.Score.csproj">
+      <Project>{d97aa506-288b-424c-aa22-61ef4c7728d3}</Project>
+      <Name>Tatelier.Score</Name>
     </ProjectReference>
     <ProjectReference Include="..\Tatelier.Common\Tatelier.Common.csproj">
       <Project>{1b81d1d7-556d-4039-855c-756c4aff1e39}</Project>
