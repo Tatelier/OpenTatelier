@@ -41,6 +41,16 @@ namespace Tatelier.Connect
 		{
 			Hjson.JsonValue result = new Hjson.JsonObject();
 
+			var authResult = HjsonEx.HjsonEx.LoadEx("AuthResult.json");
+            
+			if (authResult.ContainsKey("info"))
+            {
+				result = authResult;
+				statusList[0] = 0;
+				return result;
+            }
+
+
 			var task = Task.Run(async () =>
 			{
 				try
