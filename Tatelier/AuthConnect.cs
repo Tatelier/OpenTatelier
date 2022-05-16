@@ -43,7 +43,7 @@ namespace Tatelier.Connect
 
 			var authResult = HjsonEx.HjsonEx.LoadEx("AuthResult.json");
             
-			if (authResult.ContainsKey("info"))
+			if (authResult?.ContainsKey("info") ?? false)
             {
 				result = authResult;
 				statusList[0] = 0;
